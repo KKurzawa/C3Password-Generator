@@ -11,8 +11,10 @@ function writePassword() {
     characterLengthInput = window.prompt("Enter length of your password. Password must be between 8-128 characters.");
     characterLengthInteger = parseInt(characterLengthInput);  
   }
-  var includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes or no.");
+  var includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes if you would.");
   var includeLowercaseResponse = includeLowercase.includes("yes");
+  var includeUppercase = window.prompt("Would you like to include upper case letters in your password?  Reply yes if you would.");
+  var includeUppercaseResponse = includeUppercase.includes("yes");
   // while (includeLowercaseResponse != "yes" || includeLowercaseResponse != "no"); {
   //   includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes or no.");
   //   includeLowercaseResponse = includeLowercase.includes("yes");
@@ -25,6 +27,7 @@ function writePassword() {
   // for example for includeLowerCase if yes its true, else its false
   console.log(characterLengthInteger);
   console.log(includeLowercaseResponse);
+  console.log(includeUppercaseResponse);
 
 // original document
   passwordText.value = password;
