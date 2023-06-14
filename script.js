@@ -7,18 +7,18 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   var characterLengthInput = window.prompt("Enter length of your password. Password must be between 8-128 characters.");
   var characterLengthInteger = parseInt(characterLengthInput);
-  while (isNaN(characterLengthInteger) || characterLengthInteger < 8 || characterLengthInteger > 128); {
+  while (isNaN(characterLengthInteger) || characterLengthInteger < 8 || characterLengthInteger > 128) {
     characterLengthInput = window.prompt("Enter length of your password. Password must be between 8-128 characters.");
     characterLengthInteger = parseInt(characterLengthInput);  
   }
   var includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes if you would.");
   var includeLowercaseResponse = includeLowercase.includes("yes");
-  var includeUppercase = window.prompt("Would you like to include upper case letters in your password?  Reply yes if you would.");
-  var includeUppercaseResponse = includeUppercase.includes("yes");
-  // while (includeLowercaseResponse != "yes" || includeLowercaseResponse != "no"); {
-  //   includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes or no.");
-  //   includeLowercaseResponse = includeLowercase.includes("yes");
-  // }
+  while (includeLowercaseResponse !== "yes" || includeLowercaseResponse !== "no") {
+    includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes or no.");
+    includeLowercaseResponse = includeLowercase.includes("yes");
+  }
+  // var includeUppercase = window.prompt("Would you like to include upper case letters in your password?  Reply yes if you would.");
+  // var includeUppercaseResponse = includeUppercase.includes("yes");
   // var includeLowercaseYes = true;
   // var includeLowercaseRespnse = 
   // var includeUppercase 
