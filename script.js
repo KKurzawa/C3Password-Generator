@@ -11,12 +11,23 @@ function writePassword() {
     characterLengthInput = window.prompt("Enter length of your password. Password must be between 8-128 characters.");
     characterLengthInteger = parseInt(characterLengthInput);  
   }
-  var includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes if you would.");
-  var includeLowercaseResponse = includeLowercase.includes("yes");
-  while (includeLowercaseResponse !== "yes" || includeLowercaseResponse !== "no") {
-    includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes or no.");
-    includeLowercaseResponse = includeLowercase.includes("yes");
+  var includeLowerCase
+  var includeLowerCaseInput = window.prompt("Would you like to include lower case letters in your password?  Reply yes if you would.");
+  var inputIsValid = isYesOrNo(includeLowerCaseInput);
+  while (!inputIsValid) {
+    includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes if you would.");
+    inputIsValid = isYesOrNo(includeLowerCaseInput);
   }
+  if (includeLowerCaseInput == "yes") {
+    includeLowerCase = true
+  }  else {
+    includeLowerCase = false
+  }
+  // var includeLowercaseResponse = includeLowercase.includes("yes");
+  // while (includeLowercaseResponse != "yes" || includeLowercaseResponse != "no") {
+  //   includeLowercase = window.prompt("Would you like to include lower case letters in your password?  Reply yes or no.");
+  //   includeLowercaseResponse = includeLowercase.includes("yes");
+  // }
   // var includeUppercase = window.prompt("Would you like to include upper case letters in your password?  Reply yes if you would.");
   // var includeUppercaseResponse = includeUppercase.includes("yes");
   // var includeLowercaseYes = true;
@@ -34,6 +45,13 @@ function writePassword() {
 
 }
 
+function isYesOrNo(input) {
+  if (input == "yes" || input == "no") {
+    return true
+  } else {
+    return false
+  }
+}
 // Add event listener to generate button-original ducument
 generateBtn.addEventListener("click", writePassword);
 
