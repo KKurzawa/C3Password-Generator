@@ -1,7 +1,5 @@
-// Assignment Code-original document
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input-original document next 3 lines
 function writePassword() {
   
    // Prompt for password length
@@ -97,6 +95,7 @@ function writePassword() {
   //Alert if user responded no to including all character types 
   if (includeLowerCaseInput === false && includeUpperCaseInput === false && includeNumberInput === false && includeSpecialCharactersInput === false) {
     window.alert("You need to reply yes in including at least one of the following: lower case letters, upper case letters, numbers, special charcters.");
+    return
   }
 
 
@@ -190,6 +189,5 @@ function isSpecialCharactersYesOrNo(input) {
   }
 }
 
-// Add event listener to generate button-original ducument
 generateBtn.addEventListener("click", writePassword);
 
