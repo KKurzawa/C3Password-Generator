@@ -10,6 +10,13 @@ Upon clicking the button 'Generate Password' the user is prompted to enter a pas
 
 Screenshots:
 ![Homepage](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img1.png)
+![Prompt1](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img2.png)
+![Prompt2](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img3.png)
+![Prompt3](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img4.png)
+![Prompt4](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img5.png)
+![Prompt5](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img6.png)
+![Password](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img7.png)
+![Alert](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img8.png)
 
 Website URL: https://kkurzawa.github.io/C3Password-Generator/
 
