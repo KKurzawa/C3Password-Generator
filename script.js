@@ -10,7 +10,7 @@ function writePassword() {
   var characterLengthInteger = parseInt(characterLengthInput);
   while (isNaN(characterLengthInteger) || characterLengthInteger < 8 || characterLengthInteger > 128) {
     characterLengthInput = window.prompt("Enter length of your password. Password must be between 8-128 characters.");
-    if (characterLengthInteger === null) { 
+    if (characterLengthInput === null) { 
       return;
     }  
     characterLengthInteger = parseInt(characterLengthInput);  
