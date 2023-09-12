@@ -1,6 +1,6 @@
-# C3 Password Generator
+# Password Generator
 
-## Challenge 3 in MSU Bootcamp
+## Description
 
 This project generates random passwords based on criteria that the user choses. As most websites, apps, etc., utilize passwords the project suplies code to be used with and meet the demand of such sites. Being my first project utilizing JavaScript I learned to implement and use some basic principles of the language.
 
@@ -18,9 +18,9 @@ Screenshots:
 ![Password](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img7.png)
 ![Alert](https://github.com/KKurzawa/C3Password-Generator/blob/main/Assets/images/img8.png)
 
-Website URL: https://kkurzawa.github.io/C3Password-Generator/
+Website URL: https://kkurzawa.github.io/Password-Generator/
 
-GitHub Repository: https://github.com/KKurzawa/C3Password-Generator.git
+GitHub Repository: https://github.com/KKurzawa/Password-Generator
 
 ## CREDITS
 
